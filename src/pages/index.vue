@@ -142,7 +142,7 @@ function scrollTo(target: number) {
       select-none
       :page="page + 1"
       size="large"
-      mb-8
+      mb-4
       @update:page="page = $event - 1"
     />
     <div
@@ -155,8 +155,7 @@ function scrollTo(target: number) {
         :ref="(el) => setImageRef(i, el)"
         :src="data"
         cursor-pointer
-        block w-screen-xl
-        max-w-screen
+        block
         @click="scrollTo(i + 1)"
       >
       <div text-xl mt-2 mb-4>
@@ -187,3 +186,9 @@ function scrollTo(target: number) {
     </n-affix>
   </div>
 </template>
+
+<style scoped>
+image {
+  max-width: min(100vw, 1280px);
+}
+</style>
