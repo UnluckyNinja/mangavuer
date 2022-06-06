@@ -9,7 +9,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Unocss from 'unocss/vite'
 
 import {
-  NaiveUiResolver
+  NaiveUiResolver,
 } from 'unplugin-vue-components/resolvers'
 
 export default defineConfig({
@@ -44,9 +44,9 @@ export default defineConfig({
     // https://github.com/antfu/vite-plugin-components
     Components({
       dts: true,
-      resolvers:[
-        NaiveUiResolver()
-      ]
+      resolvers: [
+        NaiveUiResolver(),
+      ],
     }),
 
     // https://github.com/antfu/unocss
