@@ -188,7 +188,7 @@ function scrollTo(target: number) {
 </template>
 
 <style scoped>
-image {
-  max-width: min(100vw, 1280px);
+img {
+  max-width: min(80vw, 1280px);
 }
 </style>
