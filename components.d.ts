@@ -13,6 +13,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     Counter: typeof import('./src/components/Counter.vue')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
+    MyImage: typeof import('./src/components/MyImage.vue')['default']
     NAffix: typeof import('naive-ui')['NAffix']
     NBackTop: typeof import('naive-ui')['NBackTop']
     NButton: typeof import('naive-ui')['NButton']
